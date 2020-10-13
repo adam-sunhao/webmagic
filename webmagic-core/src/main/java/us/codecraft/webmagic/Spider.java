@@ -60,6 +60,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Spider implements Runnable, Task {
 
+    // 四个模块，可以根据自己的需求进行定制
     protected Downloader downloader;
 
     protected List<Pipeline> pipelines = new ArrayList<Pipeline>();
@@ -68,6 +69,7 @@ public class Spider implements Runnable, Task {
 
     protected List<Request> startRequests;
 
+    // 爬取的网站
     protected Site site;
 
     protected String uuid;
